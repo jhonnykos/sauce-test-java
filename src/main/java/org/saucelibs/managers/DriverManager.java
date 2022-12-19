@@ -11,18 +11,16 @@ import static org.saucelibs.config.Constants.WEBDRIVER_PATH_WINDOWS_CHROME;
 public class DriverManager {
 
     /**
-     * Переменна для хранения объекта веб-драйвера
+     * Переменная для хранения объекта веб-драйвера
      *
      * @see WebDriver
      */
     private WebDriver driver;
 
-
     /**
-     * Переменна для хранения объекта DriverManager
+     * Переменная для хранения объекта DriverManager
      */
     private static DriverManager INSTANCE = null;
-
 
     /**
      * Менеджер properties
@@ -31,12 +29,6 @@ public class DriverManager {
      */
     private final PropertyManager props = PropertyManager.getPropertyManager();
 
-
-    /**
-     * Конструктор специально был объявлен как private (singleton паттерн)
-     *
-     * @see DriverManager#getDriverManager()
-     */
     private DriverManager() {
     }
 
@@ -64,7 +56,6 @@ public class DriverManager {
         return driver;
     }
 
-
     /**
      * Метод для закрытия сессии драйвера и браузера
      *
@@ -76,7 +67,6 @@ public class DriverManager {
             driver = null;
         }
     }
-
 
     /**
      * Метод инициализирующий веб драйвер

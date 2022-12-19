@@ -22,7 +22,6 @@ public class InitialManager {
 
     /**
      * Инициализация фреймворка и запуск браузера со страницей приложения
-     *
      */
     public static void initFramework() {
         driverManager.getDriver().manage().window().maximize();
