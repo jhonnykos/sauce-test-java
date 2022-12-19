@@ -8,7 +8,7 @@ public class CartPage extends BasePage {
 
     private final String xpathToItem = "//div[@class='inventory_item_name' and contains(text(),'%s')]";
 
-    @FindBy(className = "title")
+    @FindBy(xpath = "//span[@class='title' and contains(text(),'Your Cart')]")
     private WebElement title;
 
     @FindBy(id = "checkout")

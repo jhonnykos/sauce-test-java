@@ -11,7 +11,7 @@ public class ProductPage extends BasePage {
     private final String addToCartButtonPrefix = "add-to-cart";
     private final String removeButtonPrefix = "remove";
 
-    @FindBy(className = "title")
+    @FindBy(xpath = "//span[@class='title' and contains(text(),'Products')]")
     private WebElement title;
 
     @FindBy(className = "inventory_item")
